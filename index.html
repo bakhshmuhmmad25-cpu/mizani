@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval' https://accounts.google.com; style-src 'self' 'unsafe-inline' https://accounts.google.com; font-src 'self'; img-src 'self' data: blob:; connect-src 'self' https://www.googleapis.com https://oauth2.googleapis.com https://accounts.google.com; frame-src https://accounts.google.com; worker-src 'self'; manifest-src 'self'">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ميزاني — إدارة ميزانيتك الشخصية</title>
+<link rel="stylesheet" href="app.css"><link rel="stylesheet" href="mobile.css"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png"><meta name="theme-color" content="#0f1c24">
+</head>
+<body>
+<div id="app">
+  <aside id="side">
+    <div class="brand"><div class="brand-name">ميزاني</div><div class="brand-sub">قرارات أوضح، راحة أكثر.</div></div>
+    <nav id="nav" aria-label="الصفحات"></nav>
+    <div class="side-foot"><div>خاص • مزامنة عبر Google</div><div class="num" id="ver">MIZANI</div></div>
+  </aside>
+  <div id="main">
+    <header id="top"></header>
+    <main id="page" tabindex="-1"></main>
+  </div>
+</div>
+<div id="modal-root"></div>
+<div id="pop-root"></div>
+<div id="toasts" aria-live="polite"></div>
+<script src="sql-wasm.js"></script><script src="core.js"></script><script src="sync.js"></script><script src="config.js"></script><script src="shim.js"></script>
+<script src="boot.js"></script>
+</body>
+</html>

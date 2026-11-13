@@ -1,0 +1,1 @@
+window.MIZANI_CFG={"webClientId": ""};

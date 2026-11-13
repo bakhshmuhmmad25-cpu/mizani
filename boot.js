@@ -1,0 +1,2 @@
+window.__mizaniReady.then(function(){return new Promise(function(r,j){var n=0;['ui.js','app.js'].reduce(function(p,f){return p.then(function(){return new Promise(function(a,b){var s=document.createElement('script');s.src=f;s.onload=a;s.onerror=b;document.body.appendChild(s);});});},Promise.resolve()).then(r,j);});}).catch(function(e){document.body.innerHTML='<pre style="padding:20px;color:#f88;white-space:pre-wrap">تعذر تشغيل التطبيق: '+(e&&e.message||e)+'</pre>';});
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(function(){});}
